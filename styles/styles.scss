@@ -191,6 +191,19 @@ button.save {
             display: flex;
             gap: 60px;
 
+            .custom-checkbox {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border: 1px solid #ccc;
+              cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked + .custom-checkbox {
+              background-color: #000;
+              border-color: #000;
+            }
+
             label {
               font-size: 16px;
               font-style: normal;
@@ -220,6 +233,8 @@ button.save {
               border: 1px solid #000;
               outline: none;
               cursor: pointer;
+
+              display: none;
             }
 
             input[type="checkbox"]:checked {
@@ -240,6 +255,7 @@ button.save {
         &.investigation_details {
           .table_content-1 {
             overflow: hidden;
+
             h3 {
               color: #000;
               font-size: 15px;
@@ -291,6 +307,19 @@ button.save {
             display: flex;
             gap: 60px;
 
+            .custom-checkbox {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border: 1px solid #ccc;
+              cursor: pointer;
+            }
+
+            input[type="checkbox"]:checked + .custom-checkbox {
+              background-color: #000;
+              border-color: #000;
+            }
+
             label {
               font-size: 16px;
               font-style: normal;
@@ -330,6 +359,7 @@ button.save {
               border: 1px solid #000;
               outline: none;
               cursor: pointer;
+              display: none;
             }
 
             /* Колір фону для вибраних чекбоксів */

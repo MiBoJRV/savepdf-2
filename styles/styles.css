@@ -235,6 +235,17 @@ button.save {
   display: flex;
   gap: 60px;
 }
+.content .page_2 .page_content .block_1.agency_details .checkbox-group .custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #000;
+  border-color: #000;
+}
 .content .page_2 .page_content .block_1.agency_details .checkbox-group label {
   font-size: 16px;
   font-style: normal;
@@ -260,6 +271,7 @@ button.save {
   border: 1px solid #000;
   outline: none;
   cursor: pointer;
+  display: none;
 }
 .content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox]:checked {
   background-color: #000;
@@ -316,6 +328,17 @@ button.save {
   /* Колір фону для вибраних чекбоксів */
   /* Зміна стилів label для вибраних чекбоксів */
 }
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group .custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #000;
+  border-color: #000;
+}
 .content .page_2 .page_content .block_1.investigation_details .checkbox-group label {
   font-size: 16px;
   font-style: normal;
@@ -346,6 +369,7 @@ button.save {
   border: 1px solid #000;
   outline: none;
   cursor: pointer;
+  display: none;
 }
 .content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox]:checked {
   background-color: #000;
