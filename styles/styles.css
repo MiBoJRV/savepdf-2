@@ -1,0 +1,490 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  color: #000;
+}
+
+body {
+  background: #DEDEDE;
+  position: relative;
+}
+
+button.save {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  border: 1px solid #D1D1D1;
+  background: #F3F3F3;
+  width: 240px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 26px auto 0;
+  cursor: pointer;
+}
+
+.content {
+  width: 1152px;
+  margin: 0 auto;
+  /*  .page_3 {
+      page-break-inside: avoid;
+      position: relative;
+      padding: 161px 50px 219px;
+
+      .page_content {
+        position: relative;;
+        z-index: 10;
+
+        .block_1 {
+          p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:first-child {
+              margin-bottom: 50px;
+            }
+          }
+
+        }
+
+        .block_2 {
+          margin-top: 490px;
+
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:first-child {
+              margin-bottom: 27px;
+            }
+          }
+        }
+
+        .block_3 {
+          margin-top: 34px;
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .block_4 {
+          margin-top: 207px;
+          margin-left: 123px;
+          p {
+            span {
+              font-size: 8px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: 0.4px;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+
+      }
+
+      .background {
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }*/
+}
+.content span[contenteditable=true] {
+  color: #F00;
+}
+.content span[contenteditable=true]:focus {
+  outline: 1px solid #F00;
+  outline-offset: 3px;
+}
+.content .page {
+  margin-bottom: 20px;
+  height: 1630px;
+  page-break-before: always;
+}
+.content .page_1 {
+  page-break-inside: avoid;
+}
+.content .page_2 {
+  page-break-inside: avoid;
+  position: relative;
+  padding: 161px 50px 219px;
+}
+.content .page_2 .page_content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content .page_2 .page_content h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.content .page_2 .page_content h2 span {
+  font-weight: 400;
+}
+.content .page_2 .page_content .table {
+  display: flex;
+  gap: 10px;
+}
+.content .page_2 .page_content .table .block {
+  display: flex;
+  gap: 10px;
+}
+.content .page_2 .page_content .table .block.empty {
+  gap: 0;
+}
+.content .page_2 .page_content .table .block p {
+  white-space: nowrap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.content .page_2 .page_content .table .block p:nth-child(1) {
+  color: #6A6A6A;
+}
+.content .page_2 .page_content .table .block p:nth-child(2) {
+  border-bottom: 1px dashed #C2C2C2;
+  width: 100%;
+  padding: 0 10px;
+  color: #000000;
+}
+.content .page_2 .page_content .table .block .empty {
+  visibility: hidden;
+}
+.content .page_2 .page_content .table_content-1 {
+  margin-top: 20px;
+  width: 526px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+.content .page_2 .page_content .table_content-1.full-width {
+  width: 100%;
+}
+.content .page_2 .page_content .table_content-2 {
+  margin-top: 20px;
+  width: 526px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+.content .page_2 .page_content p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content .page_2 .page_content .block_1.agency_details .table_content-1 {
+  width: 100%;
+}
+.content .page_2 .page_content .block_1.agency_details .block {
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 5px;
+}
+.content .page_2 .page_content .block_1.agency_details .block .block_text {
+  width: 471px;
+}
+.content .page_2 .page_content .block_1.agency_details .block.edit {
+  border-bottom: none;
+}
+.content .page_2 .page_content .block_1.agency_details .block.edit p:nth-child(2) {
+  border-bottom: 1px dashed #C2C2C2;
+}
+.content .page_2 .page_content .block_1.agency_details .block p {
+  border-bottom: none;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group {
+  display: flex;
+  gap: 60px;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 55px;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group label.checked {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  outline: none;
+  cursor: pointer;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox]:checked {
+  background-color: #000;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox]:checked + label {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_1.agency_details .checkbox-group input[type=checkbox]:checked {
+  background-color: #000;
+}
+.content .page_2 .page_content .block_1.investigation_details .table_content-1 h3 {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.content .page_2 .page_content .block_1.investigation_details .table_content-2 h3 {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.content .page_2 .page_content .block_1.investigation_details .block.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.content .page_2 .page_content .block_1.investigation_details .text {
+  color: #6A6A6A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-top: 20px;
+}
+.content .page_2 .page_content .block_1.investigation_details .technical_content {
+  margin: 17px 0 0 -50px;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group {
+  display: flex;
+  gap: 60px;
+  /* Колір фону для вибраних чекбоксів */
+  /* Зміна стилів label для вибраних чекбоксів */
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 55px;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group label.checked {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group.status label {
+  width: 120px;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group.status label:nth-child(2) {
+  width: 150px;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  outline: none;
+  cursor: pointer;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox]:checked {
+  background-color: #000;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox]:checked + label {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_1.investigation_details .checkbox-group input[type=checkbox]:checked {
+  background-color: #000;
+}
+.content .page_2 .page_content .block_1.report_submission {
+  border: 1px solid #979797;
+  background: rgba(239, 240, 240, 0.5);
+  padding: 13px 10px 12px 10px;
+}
+.content .page_2 .page_content .block_1.report_submission h3 {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.content .page_2 .page_content .block_1.report_submission p {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.65px;
+}
+.content .page_2 .page_content .block_1.link {
+  margin-top: 55px;
+  margin-left: 123px;
+}
+.content .page_2 .page_content .block_1.link p {
+  color: #F00;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.content .page_2 .page_content .block_2 {
+  margin-top: 51px;
+}
+.content .page_2 .page_content .block_2 p:nth-child(1) {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_3 {
+  margin-top: 50px;
+}
+.content .page_2 .page_content .block_3 h2 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content .page_2 .page_content .block_4 {
+  margin-top: 100px;
+}
+.content .page_2 .page_content .block_4 p {
+  width: 100%;
+}
+.content .page_2 .page_content .block_4 p:nth-child(2) {
+  margin-bottom: 30px;
+}
+.content .page_2 .page_content .block_4 span:not(:first-child) {
+  font-weight: 700;
+}
+.content .page_2 .page_content .block_5 {
+  margin-top: 100px;
+}
+.content .page_2 .page_content .block_5 p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content .page_2 .page_content .block_5 p:nth-child(2) {
+  margin-top: 10px;
+}
+.content .page_2 .page_content .block_6 {
+  border: 1px solid #D1D1D1;
+  background: transparent;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.content .page_2 .page_content .block_6:hover .remove {
+  opacity: 1 !important;
+}
+.content .page_2 .page_content .block_6 button {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  border: 1px solid #D1D1D1;
+  background: #F3F3F3;
+  width: 240px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 26px auto 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.content .page_2 .page_content .block_6 button.remove {
+  display: none;
+}
+.content .page_2 .page_content .block_6 img {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.content .page_2 .page_content .block_7 {
+  margin-top: 96px;
+  margin-left: 123px;
+}
+.content .page_2 .page_content .block_7 p span {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.content .page_2 .background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

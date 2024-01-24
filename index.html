@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Content</title>
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/script1.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+</head>
+<body>
+<div class="content" id="editableContent">
+    <div class="page page_1" id="page1">
+        <div class="background">
+            <img src="images/a4_1.png" alt="banner" width="100%">
+        </div>
+    </div>
+    <div class="page page_2" id="page2">
+        <div class="page_content-wrap">
+            <div class="page_content">
+                <div class="block_1 report">
+                    <h2>reported by</h2>
+                    <div class="table">
+                        <div class="table_content-1">
+                            <div class="block">
+                                <p>First Name:</p>
+                                <p>George</p>
+                            </div>
+                            <div class="block">
+                                <p>Position:</p>
+                                <p>Chief Account Executive</p>
+                            </div>
+                            <div class="block">
+                                <p>Address:</p>
+                                <p>150 Israel Road, S.W.Tumwater, WA 98501</p>
+                            </div>
+                            <div class="block">
+                                <p>Email:</p>
+                                <p>georgeslipski@hyperledger-qai.io</p>
+                            </div>
+                        </div>
+                        <div class="table_content-2">
+                            <div class="block">
+                                <p>Last Name:</p>
+                                <p>Slipski</p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div >
+                            <div class="block">
+                                <p> Company:</p>
+                                <p>Hyperledger Foundation</p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_1 contact">
+                    <h2><span>Client</span> contact</h2>
+                    <div class="table">
+                        <div class="table_content-1">
+                            <div class="block">
+                                <p>First Name:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Position:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Phone:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Email:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                        </div>
+                        <div class="table_content-2">
+                            <div class="block">
+                                <p>Last Name:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div >
+                            <div class="block">
+                                <p>Case number:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block empty">
+                                <p></p>
+                                <p><span class="empty">Empty</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_1 company_details">
+                    <h2><span>FRAUD COMPANY </span> details</h2>
+                    <div class="table">
+                        <div class="table_content-1 full-width">
+                            <div class="block">
+                                <p>Agency Name: (i.e. Defence, Finance)</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Government Type: (i.e. Federal, State, Local)</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Street Address:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block">
+                                <p>Mailing Address:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="block_1 agency_details">
+                    <h2>agency system details</h2>
+                    <div class="table">
+                        <div class="table_content-1">
+                            <div class="block">
+                                <div class="block_text">
+                                    <p>System Classification: (i.e. Confidential):</p>
+                                    <p><span contenteditable="true"></span></p>
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="block_text">
+                                <p>Information/Security Services Outsourced?</p>
+                                <p><span contenteditable="true"></span></p>
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox1">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox1">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="block_text">
+                                <p>Gateway Outsourced?</p>
+                                <p><span contenteditable="true"></span></p>
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox2">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox2">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="block_text">
+                                <p>Gateway Provider:</p>
+                                <p><span contenteditable="true"></span></p>
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox3">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox3">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block edit">
+                                <p>Public Facing IP Address Range:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="block_1 investigation_details">
+                    <h2><span>INVESTIGATION</span> details</h2>
+                    <p class="text">A brief summary of the incident and any technical details relevant to further investigation by Hyperledger Foundation.</p>
+                    <img class="technical_content" src="images/technical.png" alt="technical">
+                    <div class="table">
+                        <div class="table_content-1">
+                            <h3>incident timing</h3>
+                            <div class="block edit">
+                                <p>Date/Time Identi ied:</p>
+                                <p><span contenteditable="true"></span></p>
+                            </div>
+                            <div class="block checkbox">
+                                <div class="block_text">
+                                    <h3>has the matter been reported to law enforcement?</h3>
+                                  <!--  <p>System Classification: (i.e. Confidential):</p>
+                                    <p><span contenteditable="true"></span></p>-->
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox4">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox4">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_content-2">
+                            <h3>incident status</h3>
+                            <div class="block_checkbox">
+                                <div class="checkbox-group status">
+                                    <label>
+                                        <input type="checkbox" name="yes" id="yesCheckbox5">
+                                        Resolved
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="no" id="noCheckbox5">
+                                        Unresolved
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="block checkbox">
+                                <div class="block_text">
+                                    <h3>is the incident related to a high profile event?</h3>
+                                </div>
+                                <div class="block_checkbox">
+                                    <div class="checkbox-group">
+                                        <label>
+                                            <input type="checkbox" name="yes" id="yesCheckbox6">
+                                            Yes
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" name="no" id="noCheckbox6">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="block_1 report_submission">
+                    <h3>report submission</h3>
+                    <p>
+                        Post: State of Washington - Department of Financial Institutions Division of Consumer
+                    </p>
+                    <p>150 Israel Road, S.W.Tumwater, WA 98501</p>
+                    <p>
+                        Email: support@atomic-hyperledger.com
+                    </p>
+                </div>
+                <div class="block_1 link">
+                    <p>
+                    <span contenteditable="true">
+                        www.hyperledger.org
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <img src="images/a4_2.png" alt="banner" width="100%">
+        </div>
+    </div>
+</div>
+<button class="save" onclick="saveAsPDF()">Save as PDF</button>
+
+</body>
+</html>
