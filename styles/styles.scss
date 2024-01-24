@@ -133,7 +133,8 @@ button.save {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        overflow: hidden;
+        //overflow: hidden;
+        //padding-top: 5px;
 
         &.full-width {
           width: 100%;
@@ -146,7 +147,8 @@ button.save {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        overflow: hidden;
+        //overflow: hidden;
+        //padding-top: 5px;
       }
 
       p {
@@ -161,6 +163,7 @@ button.save {
 
           .table_content-1 {
             width: 100%;
+            overflow: hidden;
           }
 
           .block {
@@ -236,6 +239,7 @@ button.save {
 
         &.investigation_details {
           .table_content-1 {
+            overflow: hidden;
             h3 {
               color: #000;
               font-size: 15px;
