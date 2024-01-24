@@ -99,6 +99,9 @@ button.save {
           &.empty {
             gap: 0;
 
+            p {
+              cursor: auto !important;
+            }
           }
 
           p {
@@ -118,6 +121,7 @@ button.save {
               width: 100%;
               padding: 0 10px;
               color: #000000;
+              cursor: pointer;
             }
           }
 
@@ -217,6 +221,7 @@ button.save {
               flex-direction: row;
               gap: 10px;
               width: 55px;
+              cursor: pointer;
 
               &.checked {
                 font-weight: 700;
@@ -333,6 +338,7 @@ button.save {
               flex-direction: row;
               gap: 10px;
               width: 55px;
+              cursor: pointer;
 
               &.checked {
                 font-weight: 700;
@@ -416,6 +422,7 @@ button.save {
             line-height: normal;
             letter-spacing: 0.4px;
             text-transform: uppercase;
+            cursor: pointer;
           }
         }
       }

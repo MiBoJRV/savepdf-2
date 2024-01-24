@@ -168,6 +168,9 @@ button.save {
 .content .page_2 .page_content .table .block.empty {
   gap: 0;
 }
+.content .page_2 .page_content .table .block.empty p {
+  cursor: auto !important;
+}
 .content .page_2 .page_content .table .block p {
   white-space: nowrap;
   font-size: 16px;
@@ -184,6 +187,7 @@ button.save {
   width: 100%;
   padding: 0 10px;
   color: #000000;
+  cursor: pointer;
 }
 .content .page_2 .page_content .table .block .empty {
   visibility: hidden;
@@ -258,6 +262,7 @@ button.save {
   flex-direction: row;
   gap: 10px;
   width: 55px;
+  cursor: pointer;
 }
 .content .page_2 .page_content .block_1.agency_details .checkbox-group label.checked {
   font-weight: 700;
@@ -350,6 +355,7 @@ button.save {
   flex-direction: row;
   gap: 10px;
   width: 55px;
+  cursor: pointer;
 }
 .content .page_2 .page_content .block_1.investigation_details .checkbox-group label.checked {
   font-weight: 700;
@@ -415,6 +421,7 @@ button.save {
   line-height: normal;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .content .page_2 .page_content .block_2 {
   margin-top: 51px;
