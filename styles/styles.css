@@ -136,6 +136,7 @@ button.save {
   height: 18px;
   display: inline-block;
   min-width: 50px;
+  white-space: pre;
 }
 .content span[contenteditable=plaintext-only]:focus {
   outline: 1px solid #F00;
@@ -195,6 +196,7 @@ button.save {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.8px;
+  height: 19px;
 }
 .content .page_2 .page_content .table .block p:nth-child(1) {
   color: #6A6A6A;
@@ -439,6 +441,9 @@ button.save {
   letter-spacing: 0.4px;
   text-transform: uppercase;
   cursor: pointer;
+}
+.content .page_2 .page_content .block_1.link p span[contenteditable=true] {
+  height: 8px;
 }
 .content .page_2 .page_content .block_2 {
   margin-top: 51px;

@@ -50,6 +50,7 @@ button.save {
     height: 19px;
     display: inline-block;
     min-width: 50px;
+    //white-space: pre;
   }
 
   span[contenteditable="true"]:focus {
@@ -64,6 +65,7 @@ button.save {
     height: 18px;
     display: inline-block;
     min-width: 50px;
+    white-space: pre;
   }
 
   span[contenteditable="plaintext-only"]:focus {
@@ -134,6 +136,7 @@ button.save {
             font-weight: 400;
             line-height: normal;
             letter-spacing: 0.8px;
+            height: 19px;
 
             &:nth-child(1) {
               color: #6A6A6A;
@@ -446,6 +449,10 @@ button.save {
             letter-spacing: 0.4px;
             text-transform: uppercase;
             cursor: pointer;
+
+            span[contenteditable=true] {
+              height: 8px;
+            }
           }
         }
       }
