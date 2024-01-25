@@ -119,8 +119,25 @@ button.save {
 }
 .content span[contenteditable=true] {
   color: #F00;
+  -webkit-user-select: text;
+  user-select: text;
+  height: 19px;
+  display: inline-block;
+  min-width: 50px;
 }
 .content span[contenteditable=true]:focus {
+  outline: 1px solid #F00;
+  outline-offset: 3px;
+}
+.content span[contenteditable=plaintext-only] {
+  color: #F00;
+  -webkit-user-select: text;
+  user-select: text;
+  height: 18px;
+  display: inline-block;
+  min-width: 50px;
+}
+.content span[contenteditable=plaintext-only]:focus {
   outline: 1px solid #F00;
   outline-offset: 3px;
 }

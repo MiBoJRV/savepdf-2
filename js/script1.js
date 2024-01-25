@@ -18,7 +18,7 @@ function saveAsPDF() {
         }
 
         // Change the color of span elements to #000 before capturing
-        const editableSpans = pages[index].querySelectorAll('span[contenteditable="true"]');
+        const editableSpans = pages[index].querySelectorAll('span[contenteditable="plaintext-only"]');
         editableSpans.forEach(span => {
             span.style.color = "#000";
         });
@@ -26,6 +26,8 @@ function saveAsPDF() {
         editableSpans.forEach(span => {
             span.style.color = "#F00";
         });
+
+
     }, 500);
 
         html2canvas(pages[index]).then(canvas => {
@@ -48,99 +50,11 @@ function saveAsPDF() {
     addPageToPDF(0);
 }
 
-
-
-
-
-
 const editableSpans = document.querySelectorAll('span[contenteditable="true"]');
 editableSpans.forEach(span => {
     span.style.color = "#F00";
 
 });
-
-/*document.addEventListener('DOMContentLoaded', function() {
-    const blockContainer = document.querySelector('.block_6');
-
-    // Инициализация кнопок
-    const uploadButton = createUploadButton();
-    const removeButton = createRemoveButton();
-
-    // Добавление кнопок в контейнер
-    blockContainer.appendChild(uploadButton);
-
-    // Обработчик события для кнопки загрузки
-    uploadButton.addEventListener('click', function() {
-        const input = document.createElement('input');
-        input.type = 'file';
-
-        input.addEventListener('change', function() {
-            const file = input.files[0];
-
-            if (file) {
-                const reader = new FileReader();
-
-                reader.addEventListener('load', function() {
-                    const imageUrl = reader.result;
-                    displayImage(imageUrl);
-
-                    // Toggle visibility of buttons
-                    // uploadButton.style.display = 'none';
-                    removeButton.style.display = 'flex';
-                    removeButton.style.opacity = '0';
-                });
-
-                reader.readAsDataURL(file);
-            }
-        });
-
-        input.click();
-    });
-
-    // Обработчик события для кнопки удаления
-    removeButton.addEventListener('click', function() {
-        removeImage();
-    });
-
-    function displayImage(url) {
-        const imageContainer = document.createElement('div');
-        const image = document.createElement('img');
-
-        image.src = url;
-        image.style.maxWidth = '100%';
-        imageContainer.appendChild(image);
-
-        blockContainer.innerHTML = ''; // Очистка контейнера перед добавлением нового изображения
-        blockContainer.appendChild(imageContainer);
-        blockContainer.appendChild(removeButton); // Добавление кнопки удаления
-    }
-
-    function removeImage() {
-        // Очистка контейнера
-        blockContainer.innerHTML = '';
-
-        // Повторное добавление кнопки загрузки
-        blockContainer.appendChild(uploadButton);
-    }
-
-    // Функция создания кнопки загрузки
-    function createUploadButton() {
-        const button = document.createElement('button');
-        button.className = 'upload';
-        button.textContent = 'Upload the Image';
-        return button;
-    }
-
-    // Функция создания кнопки удаления
-    function createRemoveButton() {
-        const button = document.createElement('button');
-        button.className = 'remove';
-        button.textContent = 'Remove the Image';
-        // button.style.display = 'none'; // Изначально скрыта
-        return button;
-    }
-});*/
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxes = document.querySelectorAll('[id^="yesCheckbox"], [id^="noCheckbox"]');
@@ -175,6 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 });
+
+
+
+
+
+
+
+
+
 
 
 
